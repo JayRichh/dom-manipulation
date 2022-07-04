@@ -30,4 +30,11 @@ divColor.appendChild(h1);
 divColor.appendChild(p);
 div.appendChild(divColor);
 
+const button = document.createElement("button");
+button.textContent = "Click me";
+button.addEventListener("click", () => {
+    h3.textContent = "I've been clicked";
+});
+div.appendChild(button);
+
 //append to DOM
